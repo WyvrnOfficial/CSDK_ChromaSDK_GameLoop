@@ -160,18 +160,12 @@ void PrintLegend(bool supportsStreaming, BYTE platform)
 
 void Init()
 {
-	if (ChromaAnimationAPI::InitAPI() != 0)
-	{
-		cerr << "Failed to load Chroma library!" << endl;
-		exit(1);
-	}
-
 	ChromaSDK::APPINFOTYPE appInfo = {};
 
-	_tcscpy_s(appInfo.Title, 256, _T("Razer Chroma CSDK Game Loop Sample Application"));
-	_tcscpy_s(appInfo.Description, 1024, _T("A sample application using Razer Chroma SDK"));
-	_tcscpy_s(appInfo.Author.Name, 256, _T("Razer"));
-	_tcscpy_s(appInfo.Author.Contact, 256, _T("https://developer.razer.com/chroma"));
+	wcscpy_s(appInfo.Title, 256, L"Razer Chroma CSDK Game Loop Sample Application");
+	wcscpy_s(appInfo.Description, 1024, L"A sample application using Razer Chroma SDK");
+	wcscpy_s(appInfo.Author.Name, 256, L"Razer");
+	wcscpy_s(appInfo.Author.Contact, 256, L"https://developer.razer.com/chroma");
 
 	//appInfo.SupportedDevice = 
 	//    0x01 | // Keyboards
