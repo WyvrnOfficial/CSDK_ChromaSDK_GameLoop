@@ -165,7 +165,7 @@ void Init()
 	wcscpy_s(appInfo.Title, 256, L"Razer Chroma CSDK Game Loop Sample Application");
 	wcscpy_s(appInfo.Description, 1024, L"A sample application using Razer Chroma SDK");
 	wcscpy_s(appInfo.Author.Name, 256, L"Razer");
-	wcscpy_s(appInfo.Author.Contact, 256, L"https://developer.razer.com/chroma");
+	wcscpy_s(appInfo.Author.Contact, 256, L"https://wyvrn.com");
 
 	//appInfo.SupportedDevice = 
 	//    0x01 | // Keyboards
